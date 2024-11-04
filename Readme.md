@@ -12,7 +12,7 @@ Welcome to my portfolio website! This website showcases my projects, experiences
 
 ## Live Preview
 
-Check out the live version of my portfolio [here](https://your-live-portfolio-link.com).
+Check out the live version of my portfolio [here](https://priyanshu-priya.github.io/Portfolio-Website/).
 
 ## About Me
 
