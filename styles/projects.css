@@ -1,0 +1,95 @@
+:root{
+    --primary-color: #cfd8dc;
+    /* --secondary-color: #304ffe; */
+    --secondary-color: #0ef;
+
+}
+#projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5vh;
+    background-color: #13151d;
+    padding: 40px 20px;
+
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 0.3fr));
+    justify-content: center;
+    gap: 3rem;
+    max-width: 80%;
+  }
+  
+  /* Cards Sytle */
+  .card {
+    overflow: hidden;
+    border: 1px solid var(--primary-color);
+    box-shadow: 4px 4px var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: border 200ms ease-in, box-shadow 200ms ease-in;
+    box-shadow: rgb(207, 216, 220) 4px 4px;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  .card__image {
+    height: 12rem;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .card__title {
+    padding: 1rem;
+  }
+  
+  .card__description {
+    padding: 0 1rem;
+  }
+  .card__links {
+    display: flex;
+    justify-content: space-between; /* Distributes the links evenly */
+    padding: 1rem; /* Adds padding to the links section */
+}
+.card__links:nth-child(2) path{
+    fill: #fff;
+}
+
+  .card__link {
+    text-decoration: none;
+    padding: 1rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+  }
+  
+  .card__links a:first-child::after {
+    content: "\f061"; 
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: relative;
+    left: 0.5rem;
+}
+
+  
+  .card:hover {
+    border: 1px solid var(--secondary-color);
+    box-shadow: 8px 8px var(--secondary-color);
+  }
+  
+  .card:hover .card__link::after {
+    animation: arrow 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes arrow {
+    0% {
+      left: 0.5rem;
+    }
+    100% {
+      left: 1.5rem;
+    }
+  }
+  

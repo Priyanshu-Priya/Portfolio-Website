@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --color-1: #0f1016;
+    --text-color: #f0f0f0;
+    /* --acent-color: #006aff; */
+    --acent-color: #0ef;
+
+}
+
+*{
+    margin:0;
+    padding:0; 
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 12pt;
+    font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav{
+    height: 80px;
+    background-color: var(--color-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.links-container{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav a{
+    height: 100%;
+    
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+nav a:hover{
+    background-color: var(--acent-color);
+}
+
+nav .logo{
+    margin-right: auto;
+    font-weight: 800;
+    font-size: x-large;
+}
+
+nav .small-logo {
+    display: none; /* Hide the small logo by default */
+}
+nav svg{
+    fill:var(--text-color)
+}
+#sidebar-active{
+    display: none;
+}
+
+.open-sidebar-button, .close-sidebar-button{
+
+    display: none;
+}
+
+@media(max-width:800px){ 
+    .links-container{
+        
+        flex-direction: column;
+        align-items: flex-start;
+
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        width: 300px;
+        background-color: var(--color-1);
+        box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25) ;
+        transition: .75s ease-out;
+    }
+    nav{
+        height: 60px;
+        justify-content: flex-end;
+    }
+    nav a{
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;
+
+    }
+    .open-sidebar-button, .close-sidebar-button{
+        padding: 0 20px;
+        display: block;
+    }
+    #sidebar-active:checked ~ .links-container{
+        right: 0;
+    }
+
+    #sidebar-active:checked ~ #overlay{
+        /* background: red; */
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left:0;
+        z-index: 9;
+    }
+    .close-sidebar-button{
+        position: relative;
+        top: 1.5%;
+    }
+
+    nav .small-logo {
+        display: inline; /* Hide the main logo on small screens */
+        margin-right: auto;
+        font-weight: 800;
+        font-size: x-large;
+    }
+
+
+
+}
