@@ -29,74 +29,54 @@
     color: #fff;
     line-height: 1.2;
 }
-.header-content h3{
+/* .header-content h3{
     font-size: 32px;
     font-weight: 700;
     color: #0ef;
+} */
+
+
+
+
+.header-content {
+    color: #fff;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
 }
 
+.animation {
+    display: flex; /* Align text and cursor inline */
+    align-items: center; /* Center cursor vertically with text */
+}
 
-
-
-/* .text-animation{
+.text-animation {
     font-size: 34px;
-    font-weight: 600;
-    min-width: 280px;
-}
-
-.text-animation span{
-    position: relative;
-}
-.text-animation span::before{
-    content: "Web Developer";
+    font-weight: 700;
+    display: inline-block; /* Allows the width to be based on content */
     color: #0ef;
-    animation: words 20s infinite;
+    white-space: nowrap; /* Prevents text wrapping */
+    overflow: hidden; /* Hides the text during typing effect */
+    border-right: 2px solid transparent; /* Placeholder for cursor */
+    animation: caret 0.75s step-end infinite; /* Blinking effect */
 }
-.text-animation span::after{
-    content: "";
-    background: transparent;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 3px solid #0ef ;
-    right : -8;
-    animation: cursor 0.6 infinite , typing 20s steps(14) infinite;
+@media (max-width: 450px) {
+    .text-animation {
+        font-size: 30px; /* Reduced font size */
+        font-weight: 500; /* Reduced font weight */
+    }
+
+}
+.cursor {
+    color: #0ef; /* Cursor color */
+    font-size: 34px; /* Same size as text */
+    margin-left: 10px; /* Fixed space between text and cursor */
 }
 
-
-@keyframes cursor {
-    to{
-        border-left: 2px solid #0ef;
-    }
-    
+/* Blinking Cursor Effect */
+@keyframes caret {
+    50% { border-color: transparent; } /* Hides the border to simulate cursor blink */
 }
-@keyframes words {
-    0%,
-    20%{
-        content: "Frontend Developer";
-    }
-    21%,
-    40%{
-        content: "Web Desiner";
-    }
-    41%,
-    60%{
-        content: "UI / UX Desiner";
-    }
-    61%,
-    80%{
-        content: "Web Developer";
-    }
-    81%,
-    100%{
-        content: "Software Developer";
-    }
-}
-@keyframes typing {
-    10%,15%,30%,25%,35%,50%,55%,70%,90%,95%{width: 0;}
-    5%,20%,25%,40%,45%,60%,65%,80%,85%{width: calc(100%+8px);}
-}
- */
 
 
 
