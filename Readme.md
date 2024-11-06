@@ -2,17 +2,19 @@
 
 Welcome to my portfolio website! This website showcases my projects, experiences, and skills as a web developer and AI/ML enthusiast.
 
-## Table of Contents
+## Live Preview
 
+Check out the live version of my portfolio [here](https://priyanshupriya.netlify.app/).
+
+[Screenshot](assets\screenshot.png)
+
+## Table of Contents
 - [About Me](#about-me)
 - [Technologies Used](#technologies-used)
 - [Features](#features)
 - [Projects](#projects)
 - [Contact](#contact)
 
-## Live Preview
-
-Check out the live version of my portfolio [here](https://priyanshu-priya.github.io/Portfolio-Website/).
 
 ## About Me
 
@@ -31,7 +33,7 @@ Check out the live version of my portfolio [here](https://priyanshu-priya.github
 
 - **Responsive Design**: The website is fully responsive and adapts to various screen sizes.
 - **Project Showcase**: Highlighting my projects with detailed descriptions.
-- **Contact Form**: A simple way for visitors to get in touch with me.
+- **Contact Form**: A fully functional contact form that sends messages directly to my inbox, allowing visitors to get in touch easily.
 
 ## Projects
 
@@ -44,8 +46,13 @@ Here are some notable projects featured on my portfolio:
 ## Contact
 
 If you'd like to get in touch, you can find me on:
+It looks like you've included the same link for both GitHub and Twitter in your contact section. Here's the updated version with the correct links for each platform:
+
 - **Email**: priyanshupriyacodes@gmail.com
-- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/priyanshu-priya)
-- **GitHub**: [Your GitHub Profile](https://github.com/priyanshu-priya)
+- **LinkedIn**: [LinkedIn Profile](https://www.linkedin.com/in/priyanshu-priya)
+- **GitHub**: [GitHub Profile](https://github.com/priyanshu-priya)
+- **Twitter**: [Twitter Profile](https://twitter.com/priyanshupriya_)
+- **Portfolio**: [Portfolio Website](https://priyanshupriya.netlify.app/)
+
 
 Thank you for visiting my portfolio!
