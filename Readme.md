@@ -6,7 +6,7 @@ Welcome to my portfolio website! This website showcases my projects, experiences
 
 Check out the live version of my portfolio [here](https://priyanshupriya.netlify.app/).
 
-[Screenshot](assets\screenshot.png)
+[Screenshot](assets/screenshot.png)
 
 ## Table of Contents
 - [About Me](#about-me)
