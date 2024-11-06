@@ -405,20 +405,22 @@
             <p>If you have any questions or would like to collaborate, feel free to reach out!</p>
             <div class="contact-boxes">
                 <div class="form-container">
-                    <form action="#" method="POST">
-                        <div class="form-notice">Sorry! This form doesn't work due to a lack of resources. Feel free to reach out on socials instead!</div>
+                    <form name="contact" method="POST" action="/thank-you" data-netlify="true" data-netlify-honeypot="bot-field">
+                        <input type="hidden" name="bot-field" aria-hidden="true">
+                        <!-- <div class="form-notice">Sorry! This form doesn't work due to a lack of resources. Feel free to reach out on socials instead!</div> -->
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
+                            <input type="text" id="name" name="name" placeholder="Name" required >
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="email" placeholder="Email" required>
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="4" required></textarea>
+                            <textarea id="message" name="message" rows="4" placeholder="Type your message here..." required></textarea>
                         </div>
+                        <!-- <div data-netlify-recaptcha="true"></div> -->
                         <button type="submit">Send Message</button>
                     </form>
                 </div>
